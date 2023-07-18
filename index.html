@@ -1,101 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Manage landing page</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+	<link rel="stylesheet" href="style.css">
+	
+	<title>Frontend Mentor | Manage landing page</title>
+
+	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+	<style>
+		.attribution { font-size: 11px; text-align: center; }
+		.attribution a { color: hsl(228, 45%, 44%); }
+	</style>
 </head>
 <body>
 
-  Pricing
-  Product
-  About Us
-  Careers
-  Community
+	<nav>
+		
+		<div class="navbar">
+			<div class="logo">
+				<img src="images/logo.svg" alt="">
+			</div>
+			<ul class="links">
+				<li><a href="#">Pricing</a></li>
+				<li><a href="#">Product</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Careers</a></li>
+				<li><a href="#">Community</a></li>
+			</ul>
+			<button class="nav-btn btn">
+				Get Started
+			</button>
+			<div class="dropdown">
+				<img src="images/icon-hamburger.svg" alt="">
+			</div>
+		</div>
+	</nav>
+	
+	<div class="grid-main">
+		<div class="banner">
+			<!-- <div class="background">
+				<img src="images/bg-tablet-pattern.svg" alt="">
+			</div> -->
+			<img src="images/illustration-intro.svg" alt="">
+		</div>
+		<div class="context">
+			<h1 class="headline">
+				Bring everyone together to build better products.
+			</h1>
+			<div class="desc">
+				<p class="paragraph">
+					Manage makes it simple for software teams to plan day-to-day 
+					tasks while keeping the larger team goals in view.
+				</p>
+				
+			</div>
+			<button class="context-btn btn">
+				Get Started
+			</button>
+		</div>
 
-  Get Started
+		<div class="left-section">
+			<h2 class="left-title">
+				What’s different about Manage?
+			</h2>
+			<p class="paragraph">
+				Manage makes it simple for software teams to plan day-to-day 
+				tasks while keeping the larger team goals in view.
+			</p>
+		</div>
+		<div class="right-section">
+			<div class="right-article">
+				<span class="btn">01</span> 
+				<p class="right-title">
+					Track company-wide progress
+				</p>
+			</div>
+			<p class="paragraph">
+				See how your day-to-day tasks fit into the wider vision. Go from 
+				tracking progress at the milestone level all the way done to the 
+				smallest of details. Never lose sight of the bigger picture again.				
+			</p>
+			<div class="right-article">
+				<span class="btn">02</span> 
+				<p class="right-title">
+					Advanced built-in reports
+				</p>
+			</div>
+			<p class="paragraph">
+				Set internal delivery estimates and track progress toward company 
+				goals. Our customisable dashboard helps you build out the reports 
+				you need to keep key stakeholders informed.
+			</p>
+			<div class="right-article">
+				<span class="btn">03</span> 
+				<p class="right-title">
+					Everything you need in one place
+			</div>
+			<p class="paragraph">
+				Everything you need in one place
+				Stop jumping from one service to another to communicate, store files, 
+				track tasks and share documents. Manage offers an all-in-one team 
+				productivity solution.			
+			</p>
+		</div>
+	</div>
 
-  Bring everyone together to build better products.
+	<!-- Pricing
+	Product
+	About Us
+	Careers
+	Community
 
-  Manage makes it simple for software teams to plan day-to-day 
-  tasks while keeping the larger team goals in view.
+	Get Started
 
-  Get Started
+	Bring everyone together to build better products.
 
-  What’s different about Manage?
+	Manage makes it simple for software teams to plan day-to-day 
+	tasks while keeping the larger team goals in view.
 
-  Manage provides all the functionality your team needs, without 
-  the complexity. Our software is tailor-made for modern digital 
-  product teams. 
+	Get Started
 
-  01
-  Track company-wide progress
-  See how your day-to-day tasks fit into the wider vision. Go from 
-  tracking progress at the milestone level all the way done to the 
-  smallest of details. Never lose sight of the bigger picture again.
+	What’s different about Manage?
 
-  02
-  Advanced built-in reports
-  Set internal delivery estimates and track progress toward company 
-  goals. Our customisable dashboard helps you build out the reports 
-  you need to keep key stakeholders informed.
+	Manage provides all the functionality your team needs, without 
+	the complexity. Our software is tailor-made for modern digital 
+	product teams. 
 
-  03
-  Everything you need in one place
-  Stop jumping from one service to another to communicate, store files, 
-  track tasks and share documents. Manage offers an all-in-one team 
-  productivity solution.
+	01
+	Track company-wide progress
+	See how your day-to-day tasks fit into the wider vision. Go from 
+	tracking progress at the milestone level all the way done to the 
+	smallest of details. Never lose sight of the bigger picture again.
 
-  What they’ve said
+	02
+	Advanced built-in reports
+	Set internal delivery estimates and track progress toward company 
+	goals. Our customisable dashboard helps you build out the reports 
+	you need to keep key stakeholders informed.
 
-  Anisha Li
-  “Manage has supercharged our team’s workflow. The ability to maintain 
-  visibility on larger milestones at all times keeps everyone motivated.”
+	03
+	Everything you need in one place
+	Stop jumping from one service to another to communicate, store files, 
+	track tasks and share documents. Manage offers an all-in-one team 
+	productivity solution.
 
-  Ali Bravo
-  “We have been able to cancel so many other subscriptions since using 
-  Manage. There is no more cross-channel confusion and everyone is much 
-  more focused.”
+	What they’ve said
 
-  Richard Watts
-  “Manage allows us to provide structure and process. It keeps us organized 
-  and focused. I can’t stop recommending them to everyone I talk to!”
+	Anisha Li
+	“Manage has supercharged our team’s workflow. The ability to maintain 
+	visibility on larger milestones at all times keeps everyone motivated.”
 
-  Shanai Gough
-  “Their software allows us to track, manage and collaborate on our projects 
-  from anywhere. It keeps the whole team in-sync without being intrusive.”
+	Ali Bravo
+	“We have been able to cancel so many other subscriptions since using 
+	Manage. There is no more cross-channel confusion and everyone is much 
+	more focused.”
 
-  Get Started
+	Richard Watts
+	“Manage allows us to provide structure and process. It keeps us organized 
+	and focused. I can’t stop recommending them to everyone I talk to!”
 
-  Simplify how your team works today.
-  Get Started
+	Shanai Gough
+	“Their software allows us to track, manage and collaborate on our projects 
+	from anywhere. It keeps the whole team in-sync without being intrusive.”
 
-  Home
-  Pricing
-  Products
-  About Us
-  Careers
-  Community
-  Privacy Policy
+	Get Started
 
-  Updates in your inbox…
-  Go
+	Simplify how your team works today.
+	Get Started
 
-  Copyright 2020. All Rights Reserved
+	Home
+	Pricing
+	Products
+	About Us
+	Careers
+	Community
+	Privacy Policy
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+	Updates in your inbox…
+	Go
+
+	Copyright 2020. All Rights Reserved -->
+
+	
+	<!-- <div class="attribution">
+		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+		Coded by <a href="#">Your Name Here</a>.
+	</div> -->
 </body>
 </html>
